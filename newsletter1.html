@@ -11,6 +11,7 @@
     <link href="assets/css/colorbox.css" rel="stylesheet" /><noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"></noscript>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/recentPost.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143610978-1"></script>
     <!-- WEB PUSH BY SENDPULSE
@@ -57,7 +58,8 @@
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="newsletter3.html">Recent Post</a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.5s"><a id="rp" href="">Recent Post</a></li>
+                <script>updateLink();</script>
                 <!-- <li class="wow fadeInUp" data-wow-delay="1s"><a href="#footer">About Us</a></li> -->
                 <li class="wow fadeInUp" data-wow-delay="1.0s"><a href="#footer">Contact Us</a></li>
                 <li class="wow fadeInUp" data-wow-delay="1.5s"><a class="iframe" href="newsletter.html">Subscribe</a>
@@ -87,7 +89,7 @@
                     </h2>
                      </div>
                     
-                            <div class = "box wow fadeInUp">
+                            <div class = "box">
                                 
                                     <p>
                                             Ever wondered the social media application, ‘Facebook’ could entitle you to mine a cryptocurrency?  Cryptocurrencies or digital currency have been a vital currency in the past decade. The growth of this currency has always been exponential . Many young entrepreneurs and businessmen invest in these different types of cryptocurrencies and are endured a great profit too. Some of them have even earned in millions of dollars. 
@@ -96,7 +98,7 @@
                      
                                             In this age of of cryptocurrencies, the famous social media application, Facebook is planning to launch its own cryptocurrency by the first half of 2020 named ‘Libra’. Obviously, one would expect the value of the cryptocurrency from a billion dollar social media company to be quite high. People from all over the world are already excited for the launch of the currency. It is going to be run by the libra association, a Geneva based entity that has over two dozen founding partners, including Mastercard, Visa ,Uber and the Vodafone group.
                                     <br>
-                                    <div class=" image right"id="specific"><img alt="facebooklibra Vs Bitcoin" class = "newsletterimage"
+                                    <div class=" image right"id="specific"><img alt="facebooklibra Vs Bitcoin" class = "newsletterimage wow fadeInUp"
                                         src="images/Facebooklibra Vs Bitcoin.jpeg" /></div>
                                             Many lawmakers and commentators like Chris Hughes have asked why would the world need Libra?
                                              The Mission of Libra is, ‘ To enable a simple global currency and financial infrastructure that empowers billions of people’. Libra has tried to solve the problems of high fees of internet access which is the reason why more than half a billion of people do not have the internet access .

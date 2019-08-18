@@ -11,6 +11,7 @@
     <link href="assets/css/colorbox.css" rel="stylesheet" /><noscript>
         <link rel="stylesheet" href="assets/css/noscript.css"></noscript>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/recentPost.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143610978-1"></script>
     <!-- WEB PUSH BY SENDPULSE
@@ -46,7 +47,7 @@
   flex: 50%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 250px) and (max-device-width : 770px) {
     .row{
         display:block;
     }
@@ -74,7 +75,8 @@
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="newsletter3.html">Recent Post</a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.5s"><a id="rp" href="">Recent Post</a></li>
+                <script>updateLink();</script>
                 <!-- <li class="wow fadeInUp" data-wow-delay="1s"><a href="#footer">About Us</a></li> -->
                 <li class="wow fadeInUp" data-wow-delay="1.0s"><a href="#footer">Contact Us</a></li>
                 <li class="wow fadeInUp" data-wow-delay="1.5s"><a class="iframe" href="newsletter.html">Subscribe</a>
@@ -99,15 +101,15 @@
             <section class="post" data-wow-delay="1s">
                   
                   
-                     <div class="major wow fadeInUp"><span class="date">July 19, 2019</span>
+                     <div class="major"><span class="date">July 19, 2019</span>
                     <h2>Swiggy Rolling up its Sleeves as they Enter the Milk Industry
                     </h2>
                      </div>
                     
-                            <div class = "box wow fadeInUp">
+                            <div class = "box">
                                     <div class = "row">
                                             <div class = "column">
-                                                    <div class="image fit" id="specific"><img alt="Swiggy to be a Milkman"
+                                                    <div class="image fit" id="specific"><img alt="Swiggy to be a Milkman"class = "wow fadeInUp"
                                                         src="images/Swiggy.jpeg" />
                                                         </div>
                                                     </div>

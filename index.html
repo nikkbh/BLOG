@@ -11,6 +11,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/recentPost.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143610978-1"></script>
 
@@ -56,7 +57,7 @@
   flex: 50%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
     .row{
         display:block;
     }
@@ -92,7 +93,8 @@
 		<nav id="nav">
 			<ul class="links">
 				<li class="active"><a href="index.html">Home</a></li>
-				<li class="wow fadeInUp" data-wow-delay="0.5s"><a href="newsletter3.html">Recent Post</a></li>
+				<li class="wow fadeInUp" data-wow-delay="0.5s"><a id="rp" href="">Recent Post</a></li>
+				<script>updateLink();</script>
 				<!-- <li class="wow fadeInUp" data-wow-delay="1s"><a href="#footer">About Us</a></li> -->
 				<li class="wow fadeInUp" data-wow-delay="1.0s"><a href="#footer">Contact Us</a></li>
 				<li class="wow fadeInUp" data-wow-delay="1.5s"><a class="iframe" href="newsletter.html">Subscribe</a></li>
@@ -113,6 +115,84 @@
 		<div id="main">
 
 			<h2 style = "text-align: center">Newsletters</h2>
+
+			<div class="wow fadeInUp">
+				<header>
+					<h3>Electric vehicles- A medium to a better world</h3>
+					<p>August 11, 2019</p>
+				</header>
+				<div class = "row">
+					<div class = "column">
+							<div class="image fit" id="specific"><img alt="ccd"
+								src="images/ev.jpeg" />
+								</div>
+							</div>
+							<div class = "column">
+								
+								
+											<ul type = "none">
+													<b>
+															<li>
+																	Indian Government invests Rs.1 Billion to support the upcoming Electric Vehicle Industry via various schemes and subsidies.
+																 </li>
+																
+																 <li>Indian Automotive Industry facing the worst slowdown in history with sales dipping by one-third.</li>
+															
+															 
+																<li>Import tariffs on Foreign EV's raised heavily and a parade of subsidies given to home grown EV manufacturers and their consumers.</li>
+		
+																 <li>Various vehicles set to launch in the next 3 years.</li>
+																	
+													</b>
+													<br>
+													<a href="newsletter5.html" class="button big">Full Story</a>
+												</ul>
+								  
+								
+							
+							</div>
+						</div>
+					
+				
+					
+			</div>
+
+			<div class="wow fadeInUp">
+				<header>
+					<h3>A Lot Can Happen Over A Cup of Coffee</h3>
+					<p>August 4, 2019</p>
+				</header>
+				<div class = "row">
+					<div class = "column">
+							<div class="image fit" id="specific"><img alt="ccd"
+								src="images/ccd.jpeg" />
+								</div>
+							</div>
+							<div class = "column">
+								
+								
+											<ul type = "none">
+													<b>
+															<li>
+																	The CCD founder, V G Sidhhartha went missing on Monday, 29th July and was found dead on Wednesday, 31st July.
+																</li>
+																	
+																<li>Sidhhartha’s letter reveals he was a victim of market turndown, debt and tax terrorism.</li>
+																				
+																<li>Although, IT department claims the signature doesn’t match his original one.</li>
+																<li>Indian government should work on developing a more healthy environment for entrepreneurs.
+																</li>
+												
+													</b>
+													<br>
+													<a href="newsletter4.html" class="button big">Full Story</a>
+												</ul>
+								  
+								
+							
+							</div>
+						</div>
+					</div>
 
 			<div class="wow fadeInUp">
 				<header>

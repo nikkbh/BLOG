@@ -13,10 +13,12 @@
     <script src="assets/js/jquery.min.js"></script>
     <link type="text/css" href="skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet" />
         <script type="text/javascript" src="assets/js/jquery.jplayer.min.js"></script>
+        <script src="assets/js/recentPost.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143610978-1"></script>
     <!-- WEB PUSH BY SENDPULSE
-	<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/22183ecb046076677882534253378e54_1.js" async></script>-->
+  <script charset="UTF-8" src="//cdn.sendpulse.com/js/push/22183ecb046076677882534253378e54_1.js" async></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -87,7 +89,7 @@
     width: 700px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 550px) {
+@media only screen and (min-device-width : 250px) and (max-device-width : 770px) {
     .row{
         display:block;
     }
@@ -96,7 +98,8 @@
     width:250px;
     height: 160px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .jp-progress{
     width: 200px;
@@ -124,7 +127,8 @@
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="newsletter3.html">Recent Post</a></li>
+                <li class="wow fadeInUp" data-wow-delay="0.5s"><a id="rp" href="">Recent Post</a></li>
+                <script>updateLink();</script>
                 <!-- <li class="wow fadeInUp" data-wow-delay="1s"><a href="#footer">About Us</a></li> -->
                 <li class="wow fadeInUp" data-wow-delay="1.0s"><a href="#footer">Contact Us</a></li>
                 <li class="wow fadeInUp" data-wow-delay="1.5s"><a class="iframe" href="newsletter.html">Subscribe</a>
@@ -154,10 +158,10 @@
                     </h2>
                      </div>
                     
-                            <div class = "box wow fadeInUp">
+                            <div class = "box">
                                     <div class = "row">
                                             <div class = "column">
-                                                    <div class="image fit" id="specific"><img alt="Neuralink- a boon or a curse to mankind?" 
+                                                    <div class="image fit" id="specific"><img alt="Neuralink- a boon or a curse to mankind?" class = "wow fadeInUp"
                                                         src="images/neuralink.jpg" />
                                                         </div>
                                                     </div>
@@ -191,7 +195,7 @@
 
 <!--podcast start-->
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+<div id="jp_container_1" class="jp-audio wow fadeInUp" role="application" aria-label="media player">
   <div class="jp-type-single">
     <div class="jp-gui jp-interface">
     <!--  <div class="jp-volume-controls">
